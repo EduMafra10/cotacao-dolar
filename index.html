@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- serve para recarregar a página a cada 10 segundos -->
+  <meta http-equiv="refresh" content="10">
+
+  <title>Cotação do Dólar</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="etiqueta">USD → BRL</span>
+      <h1>Cotação do Dólar</h1>
+      <p>Acompanhe o valor de 1 dólar americano em reais.</p>
+    </header>
+
+    <section class="cotacoes" aria-label="Valores da cotação">
+      <article class="card destaque">
+        <h2>Valor atual</h2>
+        <p class="valor" id="valor-atual">—</p>
+        <span>Cotação de compra</span>
+      </article>
+
+      <article class="card">
+        <h2>Maior valor do dia</h2>
+        <p class="valor" id="maior-valor">—</p>
+        <span>Máxima do dólar</span>
+      </article>
+
+      <article class="card">
+        <h2>Menor valor do dia</h2>
+        <p class="valor" id="menor-valor">—</p>
+        <span>Mínima do dólar</span>
+      </article>
+    </section>
+
+    <p id="status" role="status">Carregando cotação...</p>
+
+    <footer>
+      <p>A página recarrega automaticamente a cada 10 segundos.</p>
+      <p>Fonte: AwesomeAPI</p>
+    </footer>
+  </main>
+</body>
+</html>

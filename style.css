@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 70px 24px;
+  background-color: #f5f4f0;
+  color: #30352f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  padding-bottom: 28px;
+  border-bottom: 2px solid #445b46;
+}
+
+.etiqueta {
+  color: #52634f;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+header > p {
+  color: #666b63;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cotacoes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 32px 0 24px;
+}
+
+.card {
+  padding: 26px 22px;
+  background-color: #fff;
+  border: 1px solid #dddfd7;
+  border-radius: 5px;
+}
+
+.card h2 {
+  color: #555d51;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.valor {
+  margin: 18px 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.card span {
+  color: #70766b;
+  font-size: 13px;
+}
+
+.destaque {
+  background-color: #edf1e9;
+  border-color: #b8c5ae;
+}
+
+.destaque .valor {
+  color: #365235;
+}
+
+#status {
+  color: #62685c;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#status.erro {
+  color: #a33129;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid #d8dcd1;
+  color: #70766b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 36px 20px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .cotacoes {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .valor {
+    font-size: 28px;
+  }
+}
